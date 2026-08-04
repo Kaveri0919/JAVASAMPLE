@@ -1,11 +1,8 @@
 class Hello{
-	public static void main(String[] args){
-		String name=System.getenv("USERNAME_VAR");
-		if(name!=null){
-			System.out.println("HELLO,"+" " +name);
-		}
-		else {
-			System.out.println("Environment Variable not set!");
-		}
-	}	
-}	
+public static String greet(String name){
+return "HELLO" + " " +name;
+}
+public static void main(String[] args){
+System.out.println(greet(args[0]));
+}
+}
